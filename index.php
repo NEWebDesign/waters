@@ -31,42 +31,37 @@ if(isset($_SESSION['username'])){
 <html>
 <head>
     <title>רוגע על המים</title>
-    <style>
-        .footer{
-            position:fixed;
-            top:95%;
-        }
-        .navbar{
-            position:fixed;
-            top:0%;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body dir = "rtl">
 
 
     <div class = "navbar">
-    <!-- NAVBAR -->
-    
-    <a href = "index.php">דף הבית</a> | 
-    <a href = "contact.php">צרו קשר</a> | 
-    <a href = "payments.php">תשלומים</a> | 
-    <?php
-        if(isset($username)){
-            if($username == "keren" || $username == "elran"){
-            ?>
-            <a href = "panel.php">פאנל ניהולי</a> | 
-            <a href = "logout.php">התנתקות</a>
-    <?php
-        }else{
-    ?>
-            <a href = "login.php">התחברות</a>
-    <?php
-        }}
-    ?>
-    <!-- END OF NAVBAR -->
+        <!-- NAVBAR -->
+        
+        <a href = "index.php">דף הבית</a> | 
+        <a href = "contact.php">צרו קשר</a> | 
+        <a href = "pay.php">תשלומים</a> | 
+        <?php
+            if(isset($username)){
+                if($username == "keren" || $username == "elran"){
+                ?>
+                <a href = "panel.php">פאנל ניהולי</a> | 
+                <a href = "calandar/calandar.php">לוח זמנים</a> | 
+                <a href = "logout.php">התנתקות</a>
+        <?php
+            }else{
+        ?>
+                <a href = "login.php">התחברות</a>
+        <?php
+            }}
+        ?>
+        <!-- END OF NAVBAR -->
     </div>
     <br>
+
+    <!-- BODY -->
+    <div class ="body">
     <h1>רוגע על המים</h1>
     <hr>
 
@@ -88,11 +83,14 @@ if(isset($_SESSION['username'])){
                 if($row['stat'] == "yes"){
                 $imageURL = 'uploads/'.$row["file_name"];
     ?>
-    <img src="<?php echo $imageURL; ?>" width = "250" height = "250" alt="" />
+    <img src="<?php echo $imageURL; ?>" width = "250" height = "250" alt="" onclick="window.open(this.src)"/>
     <?php } }
     }else{ ?>
     <p>אין תמונות זמינות...</p>
     <?php } ?>
+    </div>
+    <!-- END OF BODY -->
+
     <br>
     <div class = "footer">
         <hr>

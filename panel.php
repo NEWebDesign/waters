@@ -36,6 +36,22 @@ if(isset($_POST['id'])){
         }
     }
 }
+if(isset($_POST['ids'])){
+    $id = $_POST['ids'];
+    if($id != ""){
+        $sql = "DELETE FROM images WHERE id = ?";
+        if($query = $conn->prepare($sql)) { // assuming $mysqli is the connection
+            $query->bind_param("i", $id);
+            $query->execute();
+            echo '<script type = "text/javascript">alert("המחיקה בוצעה בהצלחה!");</script>';
+            } 
+            else {
+            $error = $conn->errno . ' ' . $conn->error;
+            echo $error; // 1054 Unknown column 'foo' in 'field list'
+            
+        }
+    }
+}
 
 
 
@@ -53,50 +69,73 @@ if(isset($_POST['id'])){
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body dir = "rtl">
-
-    <!-- NAVBAR -->
-    
-    <a href = "index.php">דף הבית</a> | 
-    <a href = "contact.php">צרו קשר</a> | 
-    <a href = "payments.php">תשלומים</a> | 
-    <?php
-        if(isset($username)){
-            if($username == "keren" || $username == "elran"){
-            ?>
-            <a href = "panel.php">פאנל ניהולי</a> | 
-            <a href = "logout.php">התנתקות</a>
-    <?php
-        }else{
-    ?>
-            <a href = "login.php">התחברות</a>
-    <?php
-        }}
-    ?>
-    <!-- END OF NAVBAR -->
-    <?php
-            
-
-            // Get images from the database
-            $query = $conn->query("SELECT * FROM images ORDER BY uploaded_on DESC");
-
-            if($query->num_rows > 0){
-                while($row = $query->fetch_assoc()){
-                    if($row['stat'] == "no"){
-                    $imageURL = 'uploads/'.$row["file_name"];
+    <div class = "navbar">
+        <!-- NAVBAR -->
+        
+        <a href = "index.php">דף הבית</a> | 
+        <a href = "contact.php">צרו קשר</a> | 
+        <a href = "pay.php">תשלומים</a> | 
+        <?php
+            if(isset($username)){
+                if($username == "keren" || $username == "elran"){
+                ?>
+                <a href = "panel.php">פאנל ניהולי</a> | 
+                <a href = "calandar/calandar.php">לוח זמנים</a> | 
+                <a href = "logout.php">התנתקות</a>
+        <?php
+            }else{
         ?>
-        <img src="<?php echo $imageURL; ?>" width = "250" height = "250" alt="" />
-        <form method = "post">
-            <input type = "text" name = "id" value = "<?php echo $row['id'];?>" readonly>
+                <a href = "login.php">התחברות</a>
+        <?php
+            }}
+        ?>
+        <!-- END OF NAVBAR -->
+    </div>
+
+    <div class = "body">
+    <!-- BODY -->
+        <?php
+                
+
+                // Get images from the database
+                $query = $conn->query("SELECT * FROM images ORDER BY uploaded_on DESC");
+
+                if($query->num_rows > 0){
+                    while($row = $query->fetch_assoc()){
+                        if($row['stat'] == "no"){
+                        $imageURL = 'uploads/'.$row["file_name"];
+            ?>
+            <img src="<?php echo $imageURL; ?>" width = "250" height = "250" alt="" />
+            <form method = "post">
+                <input type = "hidden" name = "id" value = "<?php echo $row['id'];?>" readonly>
+                <input type = "submit" value = "אישור תמונה">
+            </form>
+            <form method = "post">
+                <input type = "hidden" name = "ids" value = "<?php echo $row['id'];?>" readonly>
+                <input type = "submit" value = "מחיקה">
+            </form>
+            
+            <?php } }
+            }else{ ?>
+            <p>אין תמונות זמינות...</p>
+            <?php } ?>
             <br>
-            <input type = "submit" value = "אישור">
-        <?php } }
-        }else{ ?>
-        <p>אין תמונות זמינות...</p>
-        <?php } ?>
-        <br>
 
+        <!-- END OF BODY -->
+        </div>
+        <div class = "footer">
+        <hr>
+        <!-- FOOTER -->
 
+        <span>רוגע על המים</span> | 
+        <span>טיפולים הוליסטים</span> | 
+        <span>לימוד שחייה לכל הגילאים<span> | 
+        <span>לרוגע חייגו: אלרן - 0509014223</span>
+
+        <!-- END OF FOOTER -->
+    </div>
 </body>
 </html>
