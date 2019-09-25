@@ -154,7 +154,7 @@ if(isset($_POST['ids'])){
     <center>
     <div class = "body">
     <!-- BODY -->
-        <h1 style = "font-family:Nehama;">אישור/מחיקה של פוסטים</h1>
+        <h1 style = "font-family:Nehama;">!אישור/מחיקה של פוסטים</h1>
         <?php
                 
 
