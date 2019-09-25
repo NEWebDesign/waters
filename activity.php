@@ -74,6 +74,20 @@ if($title != '' && $description != '' && $start_date != "" && $end_date != "" &&
 <head>
     <title>הוספת פעילות </title>
     <link rel="stylesheet" type="text/css" href="main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+    <style>
+    .navbar{
+            z-index:1;
+        }
+    .body{
+        background-color: #6699ff;
+    }
+    </style>
 </head>
 <body dir = "rtl">
 
@@ -82,71 +96,95 @@ if($title != '' && $description != '' && $start_date != "" && $end_date != "" &&
     <div class = "navbar">
         <!-- NAVBAR -->
         
-        <a href = "index.php">דף הבית</a> | 
-        <a href = "contact.php">צרו קשר</a> | 
-        <a href = "pay.php">תשלומים</a> | 
-        <?php
+        
+        <div class="w3-top">
+        <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+            <a href="index.php" class="w3-bar-item w3-button"><b>רוגע על המים</b></a>
+            <!-- Float links to the right. Hide them on small screens -->
+            <div class="w3-right w3-hide-small">
+            <a href="index.php" class="w3-bar-item w3-button">דף הבית</a>
+            <a href="contact.php" class="w3-bar-item w3-button">צרו קשר</a>
+            <a href="pay.php" class="w3-bar-item w3-button">תשלומים</a>
+            <?php
             if(isset($username)){
                 if($username == "keren" || $username == "elran"){
                 ?>
-                <a href = "panel.php">פאנל ניהולי</a> | 
-                <a href = "calandar/calandar.php">לוח זמנים</a> | 
-                <a href = "logout.php">התנתקות</a>
+                <a href="panel.php" class="w3-bar-item w3-button">פאנל ניהולי</a>
+                <a href="calandar/calandar.php" class="w3-bar-item w3-button">לוח זמנים</a>
+                <a href="logout.php" class="w3-bar-item w3-button">התנתקות</a>
         <?php
             }else{
         ?>
-                <a href = "login.php">התחברות</a>
+            <a href="/waters/login/login.php" class="w3-bar-item w3-button">התחברות</a>
         <?php
             }}
         ?>
+            </div>
+        </div>
+        </div>
         <!-- END OF NAVBAR -->
     </div>
 
     <!-- BODY -->
     <div class = "body">
-    <center style = 'border:1px solid black;'>
-    <form method = "post">
+        <br>
+        <div class = "form">
+            <center>
+			<form class="contact1-form validate-form" method = "post">
+				<span class="contact1-form-title">
+                <h1>הוספת פעילות</h1>
+				</span>
 
-        <h1>הוספת פעילות</h1>
-        <span>כותרת</span>
-        <br>
-        <input type = "text" name = "title" placeholder = "כותרת">
-        <br>
-        <span>פירוט על הפעילות</span>
-        <br>
-        <textarea name = "description" placeholder = "פירוט"></textarea>
-        <br>
-        <span>דוגמא לצורת הכנסה: 02-02-2019</span>
-        <br>
-        <input type = "text" name = "start_date" placeholder = "תאריך">
-        <br>
-        <span>דוגמא לצורת הכנסה: 22:10:00 </span>
-        <br>
-        <input type = "text" name = "start_time" placeholder = "שעת התחלה">
-        <br>
-        <span>דוגמא לצורת הכנסה: 22:10:00</span>
-        <br>
-        <input type = "text" name = "end_time" placeholder = "שעת סיום">
-        <br>
-        <input type = "submit" value = "הוסף פעילות">
+				<div class="wrap-input1 validate-input" data-validate = "כותרת חובה">
+					<input class="input1" type="text" name="title" placeholder="כותרת">
+					<span class="shadow-input1"></span>
+				</div>
 
+				<div class="wrap-input1 validate-input" data-validate = "פירוט חובה">
+					<input class="input1" type="text" name="description" placeholder="פירוט">
+					<span class="shadow-input1"></span>
+				</div>
+				<div class="wrap-input1 validate-input" data-validate = "תאריך חובה">
+					<input class="input1" type="text" name="start_date" placeholder="תאריך(02-02-2019)">
+					<span class="shadow-input1"></span>
+				</div>
+				<div class="wrap-input1 validate-input" data-validate = "שעת התחלה חובה">
+					<input type = "text" class="input1" name="start_time" placeholder="שעת התחלה(14:30)">
+					<span class="shadow-input1"></span>
+                </div>
+                <div class="wrap-input1 validate-input" data-validate = "שעת סיום חובה">
+					<input type = "text" class="input1" name="end_time" placeholder="שעת סיום">
+					<span class="shadow-input1"></span>
+				</div>
 
-
-    </form>
-    </center>
+				<div class="container-contact1-form-btn">
+					<button class="contact1-form-btn">
+						<span>
+						שלח
+						<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+						</span>
+					</button>
+				</div>
+			</form>
+        </div>
+        </center>
+    
     </div>
     <!-- END OF BODY -->
 
     <div class = "footer">
-        <hr>
         <!-- FOOTER -->
-
+        
         <span>רוגע על המים</span> | 
         <span>טיפולים הוליסטים</span> | 
         <span>לימוד שחייה לכל הגילאים<span> | 
-        <span>לרוגע חייגו: אלרן - 0509014223</span>
+        <span>לרוגע חייגו: אלרן - 0509014223</span> | 
+        <span>האתר פותח על ידי נועם גלוברמן</span>
 
         <!-- END OF FOOTER -->
+
     </div>
+    <div class = "downer"></div>
+
 </body>
 </html>

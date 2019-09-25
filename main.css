@@ -1,8 +1,10 @@
 .footer{
     position:fixed;
-    top:95%;
+    top:97%;
     color:white;
 }
+
+
 .navbar{
     position:fixed;
     top:0%;
@@ -12,16 +14,26 @@
     top:5%;
     height:100%;
     width:100%;
-    background-color: #b3b3ff;
+    background: #6699ff;
+    background-image: url('background.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
     color:white;
+
 }
-a{
-    text-decoration: none;
+.downer{
+    background-color: #6699ff;
+    height: 2000%;
+   
 }
-a:visited{
-    color:black;
+@font-face {
+    font-family: Nehama;
+    src: url("fonts/Nehama.ttf");
 }
-a:hover{
-    background-color:#b3b3ff;
+body{
+    overflow: hidden;
+    font-family: Nehama;
     color:white;
+
 }
+

@@ -38,15 +38,23 @@ if(isset($_POST["submit"]) && !empty($_FILES["file"]["name"])){
                 echo '<script type = "text/javascript">alert("התמונה הועלתה בהצלחה!");</script>';
                 echo "<script type = 'text/javascript'>window.location.replace('index.php');</script>";
             }else{
+                echo '<script type = "text/javascript">alert("העלאת הקובץ נכשלה..");</script>';
+                echo "<script type = 'text/javascript'>window.location.replace('index.php');</script>";
                 $statusMsg = "File upload failed, please try again.";
             } 
         }else{
+            echo '<script type = "text/javascript">alert("בעייה בהעלאת הקובץ שבחרת");</script>';
+            echo "<script type = 'text/javascript'>window.location.replace('index.php');</script>";
             $statusMsg = "Sorry, there was an error uploading your file.";
         }
     }else{
+        echo '<script type = "text/javascript">alert("רק קבצים מסוג jpg, jpeg, png, gif & pdf מתקבלים");</script>';
+        echo "<script type = 'text/javascript'>window.location.replace('index.php');</script>";
         $statusMsg = 'Sorry, only JPG, JPEG, PNG, GIF, & PDF files are allowed to upload.';
     }
 }else{
+    echo '<script type = "text/javascript">alert("לא נבחרו קבצים להעלאה...");</script>';
+    echo "<script type = 'text/javascript'>window.location.replace('index.php');</script>";
     $statusMsg = 'Please select a file to upload.';
 }
 

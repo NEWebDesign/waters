@@ -1,3 +1,9 @@
+<style>
+  body{
+
+  }
+
+</style>
 </head>
 <body class="">
 <div role="navigation" class="navbar navbar-default navbar-static-top">
@@ -13,7 +19,12 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="/waters/index.php">לבית</a></li>
+            <li class="active"><a href="/waters/index.php">דף הבית</a></li>
+            <li class="active"><a href="/waters/contact.php">צרו קשר</a></li>
+            <li class="active"><a href="/waters/pay.php">תשלומים</a></li>
+
+
+
            
           </ul>
          

@@ -4,6 +4,11 @@ include('header.php');
 ?>
 <title>רוגע על המים</title>
 <link rel="stylesheet" href="css/calendar.css">
+
+<style>
+    background-image: url('/waters/background.jpeg');
+</style>
+
 <body>
 <?php include('container.php');?>
 <div class="container">	
@@ -31,8 +36,8 @@ include('header.php');
 			<div id="showEventCalendar"></div>
 		</div>
 		<div class="col-md-3">
-			<h4>כל הפעילויות</h4>
-			<ul id="eventlist" class="nav nav-list"></ul>
+			<li>לימאי</li>
+			<li>אלה</li>
 		</div>
 	</div>	
 	
