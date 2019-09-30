@@ -363,7 +363,7 @@ body {
 	}
 
         a:hover {
-            color: #644afbd4;
+            color: #3244f3d4;
         }
 
 	strong, b {
@@ -2062,8 +2062,8 @@ body {
         button:hover,
         .button:hover {
             background-color: rgba(163, 169, 231, 0.1);
-            box-shadow: inset 0 0 0 3px #644afbd4;
-            color: #644afbd4 !important;
+            box-shadow: inset 0 0 0 3px #3244f3d4;
+            color: #3244f3d4 !important;
         }
 
 			input[type="submit"]:hover:before,
@@ -2080,8 +2080,8 @@ body {
         button:active,
         .button:active {
             background-color: rgba(163, 169, 231, 0.35);
-            box-shadow: inset 0 0 0 3px #644afbd4;
-            color: #644afbd4 !important;
+            box-shadow: inset 0 0 0 3px #3244f3d4;
+            color: #3244f3d4 !important;
         }
 
 			input[type="submit"]:active:before,
@@ -2098,7 +2098,7 @@ body {
         button.primary,
         .button.primary {
             box-shadow: none;
-            background-color: #644afbd4;
+            background-color: #3244f3d4;
             color: #ffffff !important;
         }
 
@@ -2210,6 +2210,7 @@ body {
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
+    input[type="number"],
 	select,
 	textarea {
 		-moz-appearance: none;
@@ -2227,13 +2228,14 @@ body {
 		width: 100%;
 	}
 
-		input[type="text"]:invalid,
-		input[type="password"]:invalid,
-		input[type="email"]:invalid,
-		select:invalid,
-		textarea:invalid {
-			box-shadow: none;
-		}
+        input[type="text"]:invalid,
+        input[type="password"]:invalid,
+        input[type="email"]:invalid,
+        input[type="number"]:invalid,
+        select:invalid,
+        textarea:invalid {
+            box-shadow: none;
+        }
 
 	select {
 		background-size: 1.25rem;
@@ -2255,6 +2257,7 @@ body {
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
+    input[type="number"],
 	select {
 		height: 2.75rem;
 	}
@@ -2352,22 +2355,25 @@ body {
 		color: #7a7d86;
 	}
 
-	input[type="text"],
-	input[type="password"],
-	input[type="email"],
-	select,
-	textarea {
-		border-color: #dde1eb;
-	}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    border-color: #dde1eb;
+}
 
-        input[type="text"]:focus,
-        input[type="password"]:focus,
-        input[type="email"]:focus,
-        select:focus,
-        textarea:focus {
-            border-color: #644afbd4;
-            box-shadow: 0 0 0 1px #644afbd4;
-        }
+    input[type="text"]:focus,
+    input[type="password"]:focus,
+    input[type="email"]:focus,
+    select:focus,
+    input[type="number"]:focus,
+    textarea:focus {
+
+        border-color: #3244f3d4;
+        box-shadow: 0 0 0 1px #3244f3d4;
+    }
 
 	select {
 		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='%23dde1eb' /%3E%3C/svg%3E");
@@ -2398,8 +2404,8 @@ body {
 
 input[type="checkbox"]:focus + label:before,
 input[type="radio"]:focus + label:before {
-    border-color: #644afbd4;
-    box-shadow: 0 0 0 1px #644afbd4;
+    border-color: #3244f3d4;
+    box-shadow: 0 0 0 1px #3244f3d4;
 }
 
 	::-webkit-input-placeholder {
@@ -2502,7 +2508,7 @@ input[type="radio"]:focus + label:before {
 	}
 
 .icon.accent3 {
-    color: #644afbd4;
+    color: #3244f3d4;
 }
 
 	.icon.accent4 {
@@ -2522,21 +2528,21 @@ input[type="radio"]:focus + label:before {
 	}
 
 a.icon.alt:hover {
-    color: #644afbd4;
+    color: #3244f3d4;
 }
 
     a.icon.alt:hover:before {
         background-color: rgba(163, 169, 231, 0.1);
-        box-shadow: inset 0 0 0 1px #644afbd4;
+        box-shadow: inset 0 0 0 1px #3244f3d4;
     }
 
 a.icon.alt:active {
-    color: #644afbd4;
+    color: #3244f3d4;
 }
 
     a.icon.alt:active:before {
         background-color: rgba(163, 169, 231, 0.35);
-        box-shadow: inset 0 0 0 1px #644afbd4;
+        box-shadow: inset 0 0 0 1px #3244f3d4;
     }
 
 /* Image */
@@ -3820,7 +3826,7 @@ a.icon.alt:active {
                     width: 20rem;
                     height: 3px;
                     margin-left: -10rem;
-                    background-image: linear-gradient(90deg, #4aefe7, #644afbd4);
+                    background-image: linear-gradient(90deg, #4aefe7, #3244f3d4);
                 }
 
 		.main > .image {
@@ -3994,13 +4000,14 @@ a.icon.alt:active {
 				color: #ffffff;
 			}
 
-			.main.style2 input[type="text"],
-			.main.style2 input[type="password"],
-			.main.style2 input[type="email"],
-			.main.style2 select,
-			.main.style2 textarea {
-				border-color: rgba(255, 255, 255, 0.35);
-			}
+            .main.style2 input[type="text"],
+            .main.style2 input[type="password"],
+            .main.style2 input[type="email"],
+            .main.style2 input[type="number"],
+            .main.style2 select,
+            .main.style2 textarea {
+                border-color: rgba(255, 255, 255, 0.35);
+            }
 
 				.main.style2 input[type="text"]:focus,
 				.main.style2 input[type="password"]:focus,
@@ -4259,7 +4266,7 @@ a.icon.alt:active {
 		}
 
             #header a:hover {
-                color: #644afbd4;
+                color: #3244f3d4;
             }
 
 		#header > .logo {
@@ -4321,15 +4328,15 @@ a.icon.alt:active {
                         left: 0;
                         width: 100%;
                         height: 3px;
-                        background-image: linear-gradient(90deg,#4aefe7, #644afbd4);
+                        background-image: linear-gradient(90deg,#4aefe7, #3244f3d4);
                     }
 
                     #header > nav > ul > li.current > a {
-                        color: #644afbd4;
+                        color: #3244f3d4;
                     }
 
                     #header > nav > ul > li.active > a {
-                        color: #644afbd4;
+                        color: #3244f3d4;
                     }
 
 			.dropotron {
@@ -4373,7 +4380,7 @@ a.icon.alt:active {
 					}
 
                     .dropotron li.active > a {
-                        color: #644afbd4;
+                        color: #3244f3d4;
                     }
 
 				.dropotron a {
@@ -4384,7 +4391,7 @@ a.icon.alt:active {
 				}
 
                     .dropotron a:active, .dropotron a:hover, .dropotron a:focus {
-                        color: #644afbd4;
+                        color: #3244f3d4;
                     }
 
 		#header > .navPanelToggle {
@@ -4604,7 +4611,7 @@ a.icon.alt:active {
 			}
 
             #navPanel .link:active, #navPanel .link:focus, #navPanel .link:hover {
-                color: #644afbd4 !important;
+                color: #3244f3d4 !important;
             }
 
 			#navPanel .link .indent-1 {
@@ -4658,7 +4665,7 @@ a.icon.alt:active {
 			}
 
             #navPanel .close:hover {
-                color: #644afbd4;
+                color: #3244f3d4;
             }
 
 			@media screen and (max-width: 736px) {
