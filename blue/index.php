@@ -1,6 +1,8 @@
 ﻿<?php
 
 include_once('connect.php');
+
+
 ?>
 <!DOCTYPE HTML>
 <!--
@@ -27,70 +29,70 @@ include_once('connect.php');
 					</div>
 
 				<!-- Nav -->
-					<nav id="nav">
-                        <ul>
-                            <li class="current"><a href="index.php">דף הבית</a></li>
-                            <li>
-                                <a href="#" class="icon solid fa-angle-down">הטיפולים שלנו</a>
-                                <ul>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="index.php">דף הבית</a></li>
+                        <li>
+                            <a href="#" class=" icon solid fa-angle-down">הטיפולים שלנו</a>
+                            <ul>
 
-                                    <li>
-                                        <a href="lesson.php">שיעורי שחייה</a>
-                                        <!-- <ul>
-                                            <li><a href="#">פרטני</a></li>
-                                            <li><a href="#">קבוצות</a></li>
-                                            <li><a href="#">מבוגרים</a></li>
-                                            <li><a href="#">שיפור סגנון</a></li>
-                                            <li><a href="#">שחייה טיפולית</a></li>
-                                        </ul> -->
-                                    </li>
-                                    <li>
-                                        <a href="#">טיפולים</a>
-                                        <ul>
-                                            <li>
-                                                <a href="#">הידרותרפיה</a>
-                                                <ul>
-                                                    <li><a href="#">תינוקות</a></li>
-                                                    <li><a href="#">ילדים</a></li>
-                                                    <li><a href="#">הורים</a></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="#">וואטסו</a><ul>
-                                                    <li><a href="#">ילדים</a></li>
-                                                    <li><a href="#">נשים בהריון</a></li>
-                                                    <li><a href="#">מבוגרים</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="waterdance.php">water dance</a></li>
+                                <li>
+                                    <a href="lesson.php">שיעורי שחייה</a>
+                                    <!-- <ul>
+                                        <li><a href="#">פרטני</a></li>
+                                        <li><a href="#">קבוצות</a></li>
+                                        <li><a href="#">מבוגרים</a></li>
+                                        <li><a href="#">שיפור סגנון</a></li>
+                                        <li><a href="#">שחייה טיפולית</a></li>
+                                    </ul> -->
+                                </li>
+                                <li>
+                                    <a href="#">טיפולים</a>
+                                    <ul>
+                                        <li>
+                                            <a href="hydrotherapy.php">הידרותרפיה</a>
+                                            <!-- <ul>
+                                                <li><a href="#">תינוקות</a></li>
+                                                <li><a href="#">ילדים</a></li>
+                                                <li><a href="#">הורים</a></li>
+                                            </ul> -->
+                                        </li>
+                                        <li>
+                                            <a href="#">וואטסו</a><ul>
+                                                <li><a href="#">ילדים</a></li>
+                                                <li><a href="#">נשים בהריון</a></li>
+                                                <li><a href="#">מבוגרים</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="waterdance.php">water dance</a></li>
 
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#">ספורתרפיה</a>
-                                        <ul>
-                                            <li><a href="#">טיפול בפציעות ספורט</a></li>
-                                            <li><a href="#">עיסוי רפואי</a></li>
-                                            <li><a href="#">עיסוי ספורטאים</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#">עיסויים</a>
-                                        <ul>
-                                            <li><a href="#">עיסוי אביזרים</a></li>
-                                            <li><a href="#">שיאטסו</a></li>
-                                            <li><a href="#">עיסוי שוודי</a></li>
-                                            <li><a href="#">עיסוי רקמות</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li><a href="payment.php">תשלום</a></li>
-                            <li><a href="links.php">קישורים חיצוניים</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">ספורתרפיה</a>
+                                    <ul>
+                                        <li><a href="#">טיפול בפציעות ספורט</a></li>
+                                        <li><a href="#">עיסוי רפואי</a></li>
+                                        <li><a href="#">עיסוי ספורטאים</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">עיסויים</a>
+                                    <ul>
+                                        <li><a href="#">עיסוי אביזרים</a></li>
+                                        <li><a href="#">שיאטסו</a></li>
+                                        <li><a href="#">עיסוי שוודי</a></li>
+                                        <li><a href="#">עיסוי רקמות</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="payment.php">תשלום</a></li>
+                        <li><a href="links.php">קישורים חיצוניים</a></li>
 
-                            <li><a href="elements.php"></a></li>
-                        </ul>
-					</nav>
+                        <li><a href="elements.php"></a></li>
+                    </ul>
+                </nav>
 
 			</header>
 
@@ -226,7 +228,7 @@ include_once('connect.php');
 							<p>תוכן</p>
 						</header>
 						<div class="inner special medium">
-							<form action="#" method="post">
+							<form action = "send_mail.php" method="post">
 								<div class="fields">
 									<div class="field half">
 										<input name="name" id="name" placeholder="שם מלא" type="text" />

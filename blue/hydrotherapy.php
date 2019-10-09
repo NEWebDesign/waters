@@ -1,4 +1,4 @@
-﻿<!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <!--
     Vortex by Pixelarity
     pixelarity.com | hello@pixelarity.com
@@ -89,65 +89,47 @@
         </nav>
 
     </header>
+
     <!-- Wrapper -->
     <div id="wrapper">
 
-        <!-- Section -->
         <section class="main style1">
             <header class="small">
-                <h1>תעודות</h1>
-                <p>תוכן תוכן תוכן</p>
+                <h1> הידרותרפיה</h1>
+                <p dir="rtl">שיטה המיושמת בבריכת שחייה טיפולית או שיקומית בעלת תכונות תכנוניות מסוימות (כמו גובה אחיד, מערכת חימום, מידות ייעודיות וכולי) . השיטה מנצלת את התכונות הפיזיות של המים (חום המים, תחושת נעימות מרגיעה ומשחררת, לחץ הידרוסטאטי והפחתת משקל המטופל).</p>
             </header>
-
-            <div class="inner">
-                <div class="posts">
-                    <article>
-                        <a href="#" class="image filtered"><img src="images/pic01.jpg" alt="" /></a>
-                        <p><strong>Magna feugiat etiam</strong> ipsum dolor tempus amet, magna consectetur. Fusce eu lacus imperdiet.</p>
-                        <ul class="actions special">
-                            <li><a href="#" class="button small next">לפרטים</a></li>
-                        </ul>
-                    </article>
-                    <article>
-                        <a href="#" class="image filtered"><img src="images/pic02.jpg" alt="" /></a>
-                        <p><strong>Lorem ipsum dolor</strong> tempus lacus imperdiet cursus sed nisl adipiscing sed dolor.</p>
-                        <ul class="actions special">
-                            <li><a href="#" class="button small next">לפרטים</a></li>
-                        </ul>
-                    </article>
-                    <article>
-                        <a href="#" class="image filtered"><img src="images/pic03.jpg" alt="" /></a>
-                        <p><strong>Feugiat tempus</strong> adipiscing sed quisque mattis rhoncus proin, vel mauris dictum nullam.</p>
-                        <ul class="actions special">
-                            <li><a href="#" class="button small next">לפרטים</a></li>
-                        </ul>
-                    </article>
-                    <article>
-                        <a href="#" class="image filtered"><img src="images/pic04.jpg" alt="" /></a>
-                        <p><strong>Enim interdum</strong> dignissim sed orci felis, cursus vitae ipsum. Pulvinar ipsum ex fringilla lorem.</p>
-                        <ul class="actions special">
-                            <li><a href="#" class="button small next">לפרטים</a></li>
-                        </ul>
-                    </article>
-                    <article>
-                        <a href="#" class="image filtered"><img src="images/pic05.jpg" alt="" /></a>
-                        <p><strong>Mollis euismod</strong> maximus amet faucibus integer, tristique et lacus lobortis ligula viverra lorem.</p>
-                        <ul class="actions special">
-                            <li><a href="#" class="button small next">לפרטים</a></li>
-                        </ul>
-                    </article>
-                    <article>
-                        <a href="#" class="image filtered"><img src="images/pic06.jpg" alt="" /></a>
-                        <p><strong>Urna mattis</strong> tempor amet varius lectus, phasellus vel sem elit dignissim sagittis morbi adipiscing.</p>
-                        <ul class="actions special">
-                            <li><a href="#" class="button small next">לפרטים</a></li>
-                        </ul>
-                    </article>
-                </div>
+            <div class="image filtered" data-position="center">
+                <img src="images/p1.jpg" alt="" />
             </div>
+            <div class="inner">
 
+                <h3 dir="rtl">הידרותרפיה משמשת כאמצעי לטיפול בפתולוגיות שונות דוגמת:  </h3>
+                <p dir="rtl">
+                כאבי מפרקים,פריצת דיסק, בעיות ניווניות בשלד ובמערכת השרירים, מחלת פרקינסון, תסמונות נדירות כגון - סי.פי (שיתוק מוחין), ניוון שרירים - ALS, אוטיזם, פיגור, תסמונת דאון, הפרעות קשב וריכוז ועוד. מטרתו של הטיפול היא עצירת ההידרדרות הפיזיולוגית, הפחתת כאב וביסוס מערכת השרירים שתתמוך ותסייע בעתיד לשלד בעבודתו.                
+                </p>
+                <p dir="rtl">
+                    <strong> 
+                    למים יש תכונות מרכזיות שתורת ההידרותרפיה מנצלת לתועלתה. הגוף מאבד 2/3 ממשקלו עם הכניסה למים; כך קל יותר להשכיבו במנח אופקי ולטפל בכאב ללא לחץ על עמוד השדרה ויתר המפרקים שמסביבו.                    
+                    
+                    </strong>
+                </p>
+                <p dir="rtl">
+                הלחץ ההידרוסטטי משפיע על המטופל בשמירה על היציבות שלו במים; כלומר, המטופל בשיטת ההידרותרפיה אינו מאפשר לגוף ליפול או לאבד את שיווי המשקל. הלחץ ההידרוסטטי עולה ככל שמעמיקים; זוהי אחת הדרכים להעלות את העומס על בית החזה. לפיכך, צלילה ותרגילים מתחת למים ישפרו את המערך הנשימתי ואת היכולת להתנגד לגורמי מחלות למיניהן . ברמה התפקודית הלחץ ההידרוסטטי מסייע במניעת התהוות של בצקות, בסילוק פסולת ונוזלים מצטברים והארכת שרירי הנשימה.
+
+                </p>
+               
+                <h4 dir="rtl">המים החמים בהם מתבצע הטיפול מרפים את השרירים המכווצים מסביב למקום הכואב, ומביאים להקלה מיידית, שתלך ותתארך עם הזמן. הם מדכאים את מערכת העצבים הסימפטטית, שאחראית על קצב הלב, ופועלים במקביל ללחץ ההידרוסטטי, בהעלאה של לחץ הדם.</h4>
+               <br>
+                <ul class="actions special">
+
+                    <li><a href="payment.php" class="button next">להזמנה</a></li>
+                </ul>
+
+
+
+            </div>
+            <!-- Section -->
         </section>
-        
 
         <!-- Section -->
         <section class="main style2">

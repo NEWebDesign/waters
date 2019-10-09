@@ -31,25 +31,25 @@
                     <ul>
 
                         <li>
-                            <a href="" lesson.php"">שיעורי שחייה</a>
-                            <ul>
+                            <a href="lesson.php">שיעורי שחייה</a>
+                            <!-- <ul>
                                 <li><a href="#">פרטני</a></li>
                                 <li><a href="#">קבוצות</a></li>
                                 <li><a href="#">מבוגרים</a></li>
                                 <li><a href="#">שיפור סגנון</a></li>
                                 <li><a href="#">שחייה טיפולית</a></li>
-                            </ul>
+                            </ul> -->
                         </li>
                         <li>
                             <a href="#">טיפולים</a>
                             <ul>
                                 <li>
-                                    <a href="#">הידרותרפיה</a>
-                                    <ul>
+                                    <a href="hydrotherapy.php">הידרותרפיה</a>
+                                    <!-- <ul>
                                         <li><a href="#">תינוקות</a></li>
                                         <li><a href="#">ילדים</a></li>
                                         <li><a href="#">הורים</a></li>
-                                    </ul>
+                                    </ul> -->
                                 </li>
                                 <li>
                                     <a href="#">וואטסו</a><ul>
