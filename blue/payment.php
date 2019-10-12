@@ -163,15 +163,12 @@
                 <br>
                 <center>
                 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                    <!-- <div class="row gtr-uniform"> -->
-                        <input type="hidden" name="cmd" value="_s-xclick" />
-                        <input type="hidden" name="hosted_button_id" value="GFLLNZAJGT7UY" />
-                        <input type="submit" value = "תשלום" class="button next" name="submit" title="PayPal - The safer, easier way to pay online!"/>
-                        <img alt="" border="0" src="https://www.paypal.com/en_IL/i/scr/pixel.gif" width="1" height="1" />
-                    <!-- </div> -->
-
-                    
-                </form>
+<input type="hidden" name="cmd" value="_donations" />
+<input type="hidden" name="business" value="2C2MKQXD6KA7S" />
+<input type="hidden" name="currency_code" value="ILS" />
+<input type="image" src="https://www.paypalobjects.com/he_IL/IL/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="תרומה באמצעות לחצן PayPal" />
+<img alt="" border="0" src="https://www.paypal.com/he_IL/i/scr/pixel.gif" width="1" height="1" />
+</form>
                 </center>
             </header>
          

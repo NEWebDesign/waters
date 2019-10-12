@@ -98,7 +98,7 @@ if(isset($_POST['ids'])){
 							</form>
 						  <?php } }
 							}?>
-							
+						
 				                		        
 				        
 				    
@@ -110,8 +110,10 @@ if(isset($_POST['ids'])){
 				
 				
 
-					
-
+		
+        <a href = "files/prices.pdf" download>מחירון</a>
+        <br>
+        <a href = "files/beginconnection.pdf" download>טופס חתימת תחילת התקשרות</a>
 		</body>
 	</html>
 

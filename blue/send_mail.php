@@ -11,9 +11,9 @@
    $mail ->Host = "smtp.gmail.com";
    $mail ->Port = 465; // or 587
    $mail ->IsHTML(true);
-   $mail ->Username = "noamg.j2@gmail.com";
-   $mail ->Password = "noamking12!";
-   $mail ->SetFrom("noamg.j2@gmail.com");
+   $mail ->Username = "tipulbamaim@gmail.com";
+   $mail ->Password = "elrancohen84";
+   $mail ->SetFrom("tipulbamaim@gmail.com");
    $mail ->Subject = $mailSub;
    $mail ->Body = $mailMsg . "\n<br>כתובת לחזרה: ". $_POST['email'];
    $mail ->AddAddress($mailto);
