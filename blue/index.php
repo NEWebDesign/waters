@@ -38,30 +38,18 @@ include_once('connect.php');
 
                                 <li>
                                     <a href="lesson.php">שיעורי שחייה</a>
-                                    <!-- <ul>
-                                        <li><a href="#">פרטני</a></li>
-                                        <li><a href="#">קבוצות</a></li>
-                                        <li><a href="#">מבוגרים</a></li>
-                                        <li><a href="#">שיפור סגנון</a></li>
-                                        <li><a href="#">שחייה טיפולית</a></li>
-                                    </ul> -->
+                                 
                                 </li>
                                 <li>
                                     <a href="#">טיפולים</a>
                                     <ul>
                                         <li>
                                             <a href="hydrotherapy.php">הידרותרפיה</a>
-                                            <!-- <ul>
-                                                <li><a href="#">תינוקות</a></li>
-                                                <li><a href="#">ילדים</a></li>
-                                                <li><a href="#">הורים</a></li>
-                                            </ul> -->
+                                          
                                         </li>
                                         <li>
                                             <a href="#">וואטסו</a><ul>
-                                                <li><a href="#">ילדים</a></li>
-                                                <li><a href="#">נשים בהריון</a></li>
-                                                <li><a href="#">מבוגרים</a></li>
+                                              
                                             </ul>
                                         </li>
                                         <li><a href="waterdance.php">water dance</a></li>

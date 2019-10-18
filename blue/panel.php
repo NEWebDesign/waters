@@ -61,9 +61,9 @@ if(isset($_POST['ids'])){
 
 	</head>
 		<body dir = "rtl">
-		<a href = "calandar/index.html">לוח זמנים</a> | 
-		<a href = "logout.php">התנתקות</a>
-		<h1>ניהול פוסטים</h1>
+		<a style="font-size:5vw;" href = "calandar/index.html">לוח זמנים</a> | 
+		<a style="font-size:5vw;" href = "logout.php">התנתקות</a>
+		<h1 style="font-size:7vw;">ניהול פוסטים</h1>
 		<?php
                 
 
@@ -111,9 +111,9 @@ if(isset($_POST['ids'])){
 				
 
 		
-        <a href = "files/prices.pdf" download>מחירון</a>
+        <a style="font-size:5vw;" href = "files/prices.pdf" download>מחירון</a>
         <br>
-        <a href = "files/beginconnection.pdf" download>טופס חתימת תחילת התקשרות</a>
+        <a style="font-size:5vw;" href = "files/beginconnection.pdf" download>טופס חתימת תחילת התקשרות</a>
 		</body>
 	</html>
 

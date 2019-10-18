@@ -4,7 +4,7 @@
 
 $sqlservername = 'localhost';
 $sqlusername = 'root';
-$sqlpassword = 'xzaq1234';
+$sqlpassword = '';
 $sqldbname = 'waters_db';
 //creating the connection
 $conn = new mysqli($sqlservername, $sqlusername, $sqlpassword, $sqldbname);
